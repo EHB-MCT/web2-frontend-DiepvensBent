@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
+
+.startPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.startPage h1 {
+    font-size: 12vh;
+}
+
+.startPage a {
+    font-size: 8vh;
+    text-decoration: none;
+    padding: 0.5em;
+    color: black;
+    border: black 0.2em solid;
+    border-radius: 1em;
+}
+
+.startPage a:hover {
+    color: blue;
+}
+
+body {
+    font-family: 'Zen Antique Soft', serif;
+    margin: 0;
+    background-image: url(../img/food-flatlay-fruit-cooking.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.searchPage {
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 3vh;
+}
+
+p {
+    font-size: 2vh;
+}
+
+.btn,
+.scnd {
+    text-decoration: none;
+}
+
+
+.recipeBox img {
+    max-width: 95%;
+    margin-right: 1em;
+    border-radius: 5%;
+    align-content: center;
+}
+
+.recipeBox h1 {
+    margin-top: 0;
+}
+
+.dividerDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.heightInheritorDiv {
+    height: inherit;
+    align-self: center;
+    width: 30%;
+}
+
+#recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#recipes .recipeBox {
+    display: flex;
+    border-radius: 5px;
+    border: 0.4em solid;
+    padding: 1em;
+    width: 50%;
+    margin: 2%;
+    justify-content: space-between;
+}
+
+/* overlay styling */
+.overlay {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.overlayContent {
+    background-color: #e0cccc;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    margin-bottom: 10%;
+}
+
+.close {
+    color: grey;
+    float: right;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width:400px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dividerDiv {
+        flex-direction: column;
+    }
+
+    .recipeBox {
+        flex-direction: column;
+    }
+}
