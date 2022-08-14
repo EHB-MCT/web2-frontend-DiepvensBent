@@ -8,11 +8,11 @@ module.exports = {
 
     entry: {
 
-        getFilteredRecipes: '../../js/getFilteredRecipes.js',
+        getFilteredRecipes: './docs/getFilteredRecipes.js',
 
-        getRandomRecipes: '../../js/getRandomRecipes.js',
+        getRandomRecipes: './docs/getRandomRecipes.js',
 
-        getSavedRecipes: '../../js/getSavedRecipes.js'
+        getSavedRecipes: './docs/getSavedRecipes.js'
 
     },
 
