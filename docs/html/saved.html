@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Recipes</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/iconstyle.css">
+    <script src="../../js/getSavedRecipes.js"></script>
+
+</head>
+<body class="homeBody">
+    <header>
+        <a href="home.html">
+            <img src="../img/logo.png" alt="logo">
+        </a>
+        <div>
+            <a href="index.html" class="logout">
+                <h1>Log out</h1>
+            </a>
+            
+            <a href="saved.html" class="bookmarkIcon">
+                <span class="icon-bookmark"></span>
+            </a>
+        </div>
+    </header> 
+
+    <div id="overlayID" class="overlay">
+        <div id="content" class="overlayContent">
+            <span class="close">&times;</span>
+            <p>test text</p>
+        </div>
+    </div>
+
+    <main id="recipes">
+        <div class="recipeBox">
+            <div class="dividerDiv">
+                <img src="https://spoonacular.com/recipeImages/646738-556x370.jpg">
+                <hr>
+                <div class="recipeDiv">
+                    <h1>Bacon-Wrapped Meatloaf</h1>
+                    <p>29 Likes - 90 Min</p>
+                    <p> - gluten free - primal - ketogenic</p>
+                    <a href="#" id="633372" class="scnd">More Info</a>
+                </div>
+            </div>
+            <a href="#" id="ditiseentestid" class="btn">Unsave Recipe</a>
+        </div>
+
+        <div class="recipeBox">
+            <div class="dividerDiv">
+                <img src="https://spoonacular.com/recipeImages/646738-556x370.jpg">
+                <hr>
+                <div class="recipeDiv">
+                    <h1>Bacon-Wrapped Meatloaf</h1>
+                    <p>29 Likes - 90 Min</p>
+                    <p> - gluten free - primal - ketogenic</p>
+                    <a href="#" id="633372" class="scnd">More Info</a>
+                </div>
+            </div>
+            <a href="#" id="ditiseentestid" class="btn">Save Recipe</a>
+        </div>
+    </main>
+</body>
+</html>

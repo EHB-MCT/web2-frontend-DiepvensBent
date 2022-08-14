@@ -1,93 +1,325 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
 
-.startPage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.startPage h1 {
-    font-size: 12vh;
-}
-
-.startPage a {
-    font-size: 8vh;
-    text-decoration: none;
-    padding: 0.5em;
-    color: black;
-    border: black 0.2em solid;
-    border-radius: 1em;
-}
-
-.startPage a:hover {
-    color: blue;
-}
 
 body {
     font-family: 'Zen Antique Soft', serif;
     margin: 0;
-    background-image: url(../img/food-flatlay-fruit-cooking.jpg);
+}
+
+.loginBody {
+    height: 100vh;
+
+    background-image: url(../img/loginBG.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.searchPage {
     background-attachment: fixed;
+    background-position: 50% 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h1 {
-    font-size: 3vh;
+
+.loginBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    width: 556px;
+    height: 590px;
+    border-radius: 20px;
+
+    background-color: #F5F5F9;
 }
 
-p {
-    font-size: 2vh;
+.loginBox img{
+    height: 55px;
+    max-width: 80%;
+    margin-top: 50px;
+
+}
+.loginBox div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loginBox div h1{
+    font-size: 2.75em;
+    color: #594CB4;
+    text-align: center;
 }
 
-.btn,
-.scnd {
+.loginBox div input{
+    display: flex;
+
+    border-radius: 100px;
+    border: 1px solid #707070;
+    width: 80%;
+    height: 60px;
+    margin-bottom: 25px;
+
+    font-family: 'Zen Antique Soft', serif;
+    font-size: 36px;
+    text-indent: 30px;
+
+}
+.loginBox div input::placeholder{
+    color: #9288D2;   
+}
+
+.loginBox div a{
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+.loginBox div button{
+    border-radius: 100px;
+    border: none;
+    background-color: #594CB4;
+
+    width: 100%;
+    height: 60px;
+    
+
+    font-family: 'Zen Antique Soft', serif;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+}
+
+.loginBox div button:hover{
+    color: #9288D2;
+}
+
+.loginBox p{
+    font-size: 30px;
+    text-align: center;
+}
+
+.loginBox p a{
     text-decoration: none;
+    color: #594CB4;
+}
+
+.loginBox p a:hover{    
+    color: #9288D2;
 }
 
 
-.recipeBox img {
-    max-width: 95%;
-    margin-right: 1em;
-    border-radius: 5%;
-    align-content: center;
+/* Header */
+header{
+    display: flex;
+    width: 100%;
+    padding-top: 25px;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    
 }
 
-.recipeBox h1 {
-    margin-top: 0;
+header div{
+    display: flex;
+    padding-right: 25px;
+}
+header img{
+    height: 2.75em;
+    margin-left: 25px;
+    
+}
+header img:hover{
+    opacity: 0.5;
+}
+
+header h1{
+    font-size: 2.75em;
+    text-align: center;
+    margin: 0%;
+}
+
+.logout{
+    margin-top: -13px;
+    margin-right: 35px;
+    text-decoration: none;
+    color: black;
+}
+
+.logout:hover{
+    color: blue;
+}
+
+.bookmarkIcon{
+    margin-top: 6px;
+    text-decoration: none;
+    color: black;
+}
+
+.bookmarkIcon:hover{
+    color: blue;
+}
+
+
+/* Home pagina */
+.homeBody{
+    height: 100vh;
+
+    background-image: url(../img/homeBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeBox{
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+
+    -ms-overflow-style: none;  /* IE, Edge */
+    scrollbar-width: none;  /* Firefox */
+    
+    width: 44em;
+    height: 44em;
+    border-radius: 20px;
+    max-height: 80vh;
+
+    background-color: #F5F5F9;
+}
+
+.homeBox::-webkit-scrollbar {
+    display: none; /*Chrome , Safari, Opera */
+}
+
+
+
+
+
+
+.homeBox h1{
+    font-size: 3.75em;
+    color: #594CB4;
+    text-align: center;
+    
+}
+
+.homeBox p{
+    color: #9288D2; 
+    text-align: center;
+
+    padding: 0 35px 0 35px;
+    font-size: 30px;
+
+}
+
+.homeBox div{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 35px;
+}
+.homeBox div a button:hover{
+    color: #9288D2;
+}
+
+.homeBox div a button{
+    border-radius: 100px;
+    border: none;
+    background-color: #594CB4;
+    
+    height: 80px;
+    width: 250px;
+    padding-bottom: 5px;
+    
+
+    font-family: 'Zen Antique Soft', serif;
+    font-size: 50px;
+    color: #FFF;
+}
+
+
+/* recipe boxes */
+
+#recipes{
+    width: 60%;
+    overflow: auto;
+    margin-top: 6em;
+    
+
+    /* hide scrollbar W3S */
+    -ms-overflow-style: none;  /* IE, Edge */
+    scrollbar-width: none;  /* Firefox */
+
+    display: none;
+}
+#recipes::-webkit-scrollbar {
+    display: none; /*Chrome , Safari, Opera */
+}
+
+.recipeBox *{
+    margin: 0;
+}
+
+.recipeBox{
+    background-color: #F5F5F9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    margin-bottom: 25px; 
+    min-height: 0;
+    border-radius: 20px;
+    padding: 1em;
+    overflow: auto;
+    
 }
 
 .dividerDiv {
     display: flex;
     flex-direction: row;
 }
-
-.heightInheritorDiv {
-    height: inherit;
-    align-self: center;
-    width: 30%;
+.dividerDiv img{
+    max-width: 30%;
+    border-radius: 20px;
 }
 
-#recipes {
+.dividerDiv hr{
+    margin: 0 1em 0 1em;
+}
+
+.recipeDiv{
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-#recipes .recipeBox {
-    display: flex;
-    border-radius: 5px;
-    border: 0.4em solid;
-    padding: 1em;
-    width: 50%;
-    margin: 2%;
     justify-content: space-between;
 }
 
+.recipeDiv h1{
+    color: #594CB4;
+}
+
+.recipeDiv p{
+    color: #9288D2;
+}
+
+.recipeBox a{
+    text-decoration: none;
+}
+.recipeBox a:hover{
+    color: #594CB4;
+}
+
+
+
 /* overlay styling */
+
 .overlay {
     display: none;
     position: fixed;
@@ -102,17 +334,36 @@ p {
 }
 
 .overlayContent {
-    background-color: #e0cccc;
+    background-color: #F5F5F9;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 60%;
     margin-bottom: 10%;
+    border-radius: 20px;
+}
+.overlayContent img{
+    border-radius: 20px;
+}
+
+.overlayContent h1{
+    font-size: 2.75em;
+    color: #594CB4;
+}
+.overlayContent h2{
+    font-size: 2.25em;
+    color: #594CB4;
+}
+
+.overlayContent p{
+    font-size: 1.8em;
+    color: #9288D2;
 }
 
 .close {
     color: grey;
     float: right;
+    font-size: 2em;
 }
 
 .close:hover,
@@ -122,17 +373,116 @@ p {
     cursor: pointer;
 }
 
-@media (max-width:400px) {
-    body {
-        display: flex;
+/* filter box */
+.filterBox{
+    background-color: #F5F5F9;
+    padding: 25px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 2em;
+    top: 6em;
+}
+
+.filterBox h1{
+    margin: 0 0 0.3em 0;
+    font-size: 2em;
+    color: #594CB4;
+}
+
+.filterBox label{
+    font-size: 1em;
+    color: #9288D2;
+}
+
+.filterBox button{
+    border-radius: 100px;
+    border: none;
+    background-color: #594CB4;
+    
+    width: 100%;
+    height: 30px;
+    margin-top: 1em;
+    
+
+    font-family: 'Zen Antique Soft', serif;
+    font-size: 1em;
+    color: white;
+
+    cursor: pointer;
+}
+.filterPage{
+    margin-left: 20em;
+}
+
+
+@media (max-width: 700px) {
+    .loginBox{
+        height: auto;
+        padding: 10px;
+    }
+    .loginBox p{
         flex-direction: column;
     }
-
-    .dividerDiv {
-        flex-direction: column;
+    .homeBody  *{
+        margin: 0%;
+        
     }
-
-    .recipeBox {
+    .bookmarkIcon{
+        margin-top: 1em;
+    }
+    .homeBody{
+        justify-content: center;
+        
+    }
+    .homeBox{
+        height: auto;
+        width: auto;
+        overflow: auto;
+        
+    }
+    .homeBox h1{
+        font-size: 2em;
+        margin: 0;
+    }
+    .homeBox a{
+        margin-bottom: 1em;
+    }
+    .homeBox div{
         flex-direction: column;
+        align-items: center;
+    }
+    header{
+        position: relative;
+
+        flex-direction: column;
+        align-items: center;
+        
+        width: auto;
+        height: auto;
+    }
+    .filterBox{
+        position: relative;
+        left: 0em;
+        top: 1em;
+        margin-bottom: 1em;
+    }
+    #recipes{
+        margin-left: 0;
+        margin-top: 1em;
+        width: 95%;
+    } 
+    .recipeBox{
+        margin-bottom: 1em;
+    }
+    .recipeDiv h1{
+        font-size: 1em;
+        max-width: 90%;
+    }
+    .overlayContent{
+        margin: auto;
+        width: 80%;
     }
 }

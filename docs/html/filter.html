@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Recipes</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/iconstyle.css">
+    <script src="../../js/getFilteredRecipes.js"></script>
+</head>
+
+<body class="homeBody">
+
+    <header>
+        <a href="home.html">
+            <img src="../img/logo.png" alt="logo">
+        </a>
+        <div>
+            <a href="index.html" class="logout">
+                <h1>Log out</h1>
+            </a>
+            
+            <a href="saved.html" class="bookmarkIcon">
+                <span class="icon-bookmark"></span>
+            </a>
+        </div> 
+    </header>
+    <form class="filterBox">
+        <h1>Filter Options</h1>
+        <article>
+            <input type="radio" name="diet" id="vgt" value="vegetarian">
+            <label for="vgt">Vegetarian</label>
+        </article>
+        
+        <article>
+            <input type="radio" name="diet" id="lov" value="lacto ovo vegetarian">
+            <label for="lov">Lacto Ovo Vegetarian</label>
+        </article>
+        
+        <article>
+            <input type="radio" name="diet" id="vgn" value="vegan">
+            <label for="vgn">Vegan</label>
+        </article>
+          
+        <article>
+            <input type="radio" name="diet" id="glf" value="gluten free">
+            <label for="glf">Gluten Free</label>
+        </article>
+
+        <article>
+            <input type="radio" name="diet" id="daf" value="dairy free">
+            <label for="daf">Dairy Free</label>
+        </article>
+        
+        <article>
+            <input type="radio" name="diet" id="ket" value="ketogenic">
+            <label for="ket">Ketogenic</label>
+        </article>
+
+        <article>
+            <input type="radio" name="diet" id="pes" value="pescaterian">
+            <label for="pes">Pescaterian</label>
+        </article>
+
+        <article>
+            <input type="radio" name="diet" id="pal" value="paleo">
+            <label for="pal">Paleolithic</label>
+        </article>
+
+        <article>
+            <input type="radio" name="diet" id="pri" value="primal">
+            <label for="pri">Primal</label>
+        </article>
+
+        <article>
+            <input type="radio" name="diet" id="w30" value="whole30">
+            <label for="w30">Whole 30</label>
+        </article>
+
+        <button type="button" onclick="checkButtons()">Search Recipes</button>
+        
+    </form>
+    <div id="overlayID" class="overlay">
+        <div id="content" class="overlayContent">
+            <span class="close">&times;</span>
+            <p></p>
+        </div>
+    </div>
+
+    <main id="recipes" class="filterPage">
+        <div class="recipeBox">
+            <div class="dividerDiv">
+                <div class="heightInheritorDiv">
+                    <img src="${i.image}">
+                </div>
+                <div class="recipeDiv">
+                    <h1>${i.title}</h1>
+                    <p>${i.aggregateLikes} Likes - ${i.readyInMinutes} Min</p>
+                    <div class="recipeDivDiets">
+                        <p>diets</p>
+                        <p>diets2</p>
+                    </div>
+                    <a href="#" id="${i.id}" class="scnd">More Info</a>
+                </div>
+            </div>
+            <a href="#" id="ditiseentestid" class="btn">Save Recipe</a>
+        </div>
+    </main>
+</body>
+<script>
+    
+    
+</script>
+</html>
